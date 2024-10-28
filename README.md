@@ -14,6 +14,6 @@
 
 ### Demo
 
-| List | details |
+| List | Details |
 |---------|-------|
 | <img width="739" alt="Screenshot 2024-10-28 at 13 57 45" src="https://github.com/user-attachments/assets/542a3f70-338d-45bb-81d7-81f301eb432b"> |<img width="802" alt="Screenshot 2024-10-28 at 13 57 54" src="https://github.com/user-attachments/assets/949fd0a4-6b63-40bd-934c-174bf28da8b2"> |
