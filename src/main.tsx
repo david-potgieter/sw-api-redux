@@ -1,13 +1,9 @@
-import './index.css'
-
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import { Provider } from 'react-redux'
-
-import ThemeProvider from './providers/theme-provider'
-import { RoutesProvider } from './providers/route-provider'
-
-import store from './stores/redux/store'
+import ThemeProvider from '@sw-app/providers/theme-provider'
+import { RoutesProvider } from '@sw-app/providers/route-provider'
+import store from '@sw-app/stores/redux/store'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
