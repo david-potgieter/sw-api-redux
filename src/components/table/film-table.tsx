@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { LoadingOverlay, Stack, Table, Title } from '@mantine/core'
+import { Button, LoadingOverlay, Stack, Table, Title } from '@mantine/core'
 import {
   AppDispatch,
   FetchStatus,
@@ -16,6 +16,7 @@ import { useTableSort } from '@sw-app/stores/zustand/table-sorters-store'
 import { sortFilmsHelper } from '@sw-app/helpers/sort-films-helper'
 import { TableHeader } from '@sw-app/components/table/table-header'
 import { ErrorPage } from '@sw-app/pages/error-page'
+import { AppPaths } from '@sw-app/types/route-types'
 
 export function FilmsTable(): JSX.Element {
   const dispatch: AppDispatch = useDispatch()
@@ -48,7 +49,13 @@ export function FilmsTable(): JSX.Element {
         <Table.Td>{film.director}</Table.Td>
         <Table.Td>{film.release_date}</Table.Td>
         <Table.Td>
-          <Link to={`film/${filmAPIId?.[1]}`}>more</Link>
+          <Button
+            component={Link}
+            to={AppPaths.FILM_DETAILS.replace(':id', filmAPIId![1])}
+            size="compact-xs"
+          >
+            Details
+          </Button>
         </Table.Td>
       </Table.Tr>
     )
