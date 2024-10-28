@@ -19,7 +19,7 @@ import { IconArrowNarrowLeft } from '@tabler/icons-react'
 import { useEffect, useMemo } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { Link, useParams } from 'react-router-dom'
-import { ErrorPage } from './error-page'
+import { ErrorPage } from '@sw-app/pages/error-page'
 
 export function FilmDetails(): JSX.Element {
   const { id } = useParams<{ id: string }>()
